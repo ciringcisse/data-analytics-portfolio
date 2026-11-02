@@ -1,14 +1,14 @@
 
 :root{
-  --bg:#f5f3ee;
-  --paper:#fffdf9;
+  --bg:#fffefe;
+  --paper:#ffffff;
   --ink:#1f2422;
   --muted:#6d746f;
   --line:#d9ddd8;
   --sage:#74877d;
   --sage-dark:#46564f;
   --gold:#b79d69;
-  --stone:#e9e4dc;
+  --stone:#faf5f7;
   --charcoal:#252a28;
   --shadow:0 22px 60px rgba(31,36,34,.10);
 }
@@ -18,8 +18,8 @@ body{
   margin:0;
   font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   background:
-    radial-gradient(circle at 12% 8%, rgba(183,157,105,.10), transparent 25%),
-    radial-gradient(circle at 90% 18%, rgba(116,135,125,.10), transparent 28%),
+    radial-gradient(circle at 12% 8%, rgba(183,157,105,.035), transparent 25%),
+    radial-gradient(circle at 90% 18%, rgba(116,135,125,.035), transparent 28%),
     var(--bg);
   color:var(--ink)
 }
@@ -124,3 +124,12 @@ footer{width:min(1160px,calc(100% - 38px));margin:0 auto;padding:0 0 32px;displa
   .contact{padding:28px}
   footer{flex-direction:column}
 }
+
+/* Lighter portfolio refinements; original type, structure and accent colours retained */
+.hero{min-height:610px;padding:66px 0 60px}
+.section{padding:70px 0}
+.project{min-height:300px}
+.dashboard-placeholder{background:#fcfafb}
+.contact{background:linear-gradient(145deg,#fff,#fbf7f9)}
+.data-note{margin-top:24px;color:var(--muted);font-size:12px}
+@media(max-width:620px){.hero{min-height:auto;padding:46px 0}.section{padding:54px 0}}
